@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
 import { MyContext } from './context/MyContext'
+import Favoritos from './pages/Favoritos'
 
 
 const App = () => {
@@ -41,7 +41,7 @@ const App = () => {
 
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='favoritos' element={<AboutPage />} />
+          <Route path='favoritos' element={<Favoritos />} />
 
         </Routes>
       </MyContext.Provider>
