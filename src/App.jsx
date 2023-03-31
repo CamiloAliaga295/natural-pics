@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
-import { MyContext } from './MyContext'
+import { MyContext } from './context/MyContext'
 
 
 const App = () => {
@@ -36,7 +36,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <MyContext.Provider value={fotos}>
+   
+      <MyContext.Provider value={{fotos, setFotos}}>
+
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='favoritos' element={<AboutPage />} />
