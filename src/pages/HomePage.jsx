@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Hearth from '../components/Hearth'
 import Galeria from '../components/Galeria'
 
 const HomePage = () => {
@@ -9,7 +8,7 @@ const HomePage = () => {
     <div>
         <h1>Galeria</h1>
         <Galeria />
-        <Hearth filled={false}/>
+      
 
     </div>
   )
